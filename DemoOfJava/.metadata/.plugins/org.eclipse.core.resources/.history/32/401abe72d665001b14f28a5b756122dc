@@ -1,0 +1,30 @@
+package com.app.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity
+public class Student {
+	
+	
+	@Id
+	private int id;
+	@Setter
+	@Getter
+	private String name;
+	
+	@Setter
+	@Getter
+	private String address;
+	@Setter
+	@Getter
+	private String username;
+	@Setter
+	@Getter
+	private String password;
+	
+	private School school;
+}
